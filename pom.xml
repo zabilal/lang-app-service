@@ -8,11 +8,11 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.giassi.microservice</groupId>
-	<artifactId>microdemo2</artifactId>
+	<groupId>com.zaktech.lang-app</groupId>
+	<artifactId>lang-app-service</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>MicroserviceDemo2</name>
-	<description>Microservice Demo project for Spring Boot / JPA / Dockerfile</description>
+	<name>LangAppService</name>
+	<description>Language Learning App REST Service</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -26,6 +26,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -82,12 +88,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-test</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>test</scope>
-			<version>1.4.194</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>test</scope>-->
+<!--			<version>1.4.194</version>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
